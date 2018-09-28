@@ -11,7 +11,7 @@ A small command line tool for downloading MP3 files from a youtube video url. Wr
 # Usage
 ## Making "bash" script [Ubuntu 18.04]
 
-Put the following lines in *bin/youtube-album-dl* :
+Put the following lines in */bin/youtube-album-dl*, assuming *youtube_album_downloader.py* is located in *~/youtube_music_downloader* :
 
     #!/usr/bin/env python3
     # -*- coding: utf-8 -*-
@@ -27,18 +27,18 @@ Put the following lines in *bin/youtube-album-dl* :
         sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
         sys.exit(main())
 
-Assuming *youtube_album_downloader.py* is located in *~/youtube_music_downloader* .
-
-Change excute permission:
+Change execute permission:
     sudo chmod a + x youtube-album-dl
 
 Otherwise, just type in a terminal in current directory :
+
     python3 youtube_album_downloader.py some_options
 
 ## Usage example
 
 Download MP3 files from *youtube_url* and move files in *path* folder (relative or absolute)
-    youtube-album-dl -d path youtube_url
+
+        youtube-album-dl -d path youtube_url
 
 # Remarks
 + Run an unique session at a time
