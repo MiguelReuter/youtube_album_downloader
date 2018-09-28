@@ -28,6 +28,7 @@ Put the following lines in */bin/youtube-album-dl*, assuming *youtube_album_down
         sys.exit(main())
 
 Change execute permission:
+
     sudo chmod a + x youtube-album-dl
 
 Otherwise, just type in a terminal in current directory :
