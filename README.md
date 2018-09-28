@@ -38,7 +38,7 @@ Otherwise, just type in a terminal in current directory :
 
 Download MP3 files from *youtube_url* and move files in *path* folder (relative or absolute)
 
-        youtube-album-dl -d path youtube_url
+    youtube-album-dl -d path youtube_url
 
 # Remarks
 + Run an unique session at a time
