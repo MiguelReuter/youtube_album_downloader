@@ -118,8 +118,7 @@ def format_cue(path):
 
 def download_album(url):
     log("downloading {}...".format(url))
-    status = os.system("youtube-dl -i -o tmp/output.mp4 -f mp4 {} > log&& ".format(url) +\
-                       "ffmpeg -i tmp/output.mp4 tmp/output.mp3 >> log")
+    status = os.system("youtube-dl -i --extract-audio --audio-quality 0 --audio-format mp3 -o \"tmp/output.%(acodec)s\" {} > log ".format(url))
     log("video {}correctly downloaded.".format("" if status == 0 else "NOT "))
 
 def split_mp3(album):
